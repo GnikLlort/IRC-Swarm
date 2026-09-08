@@ -1,0 +1,46 @@
+{
+    "bot_count": 5,
+    "nickname_prefix": "TestBot",
+
+    "irc": {
+        "server": "irc.example.net",
+        "port": 6697,
+        "tls": true,
+        "verify_tls": false,
+        "username": "admin",
+        "realname": "IRC Bot Manager",
+        "channels": [
+            "#test"
+        ]
+    },
+
+    "proxy_mode": "rotate",
+    "proxy_file": "proxy.txt",
+    "proxy_health_check": true,
+    "proxy_timeout": 5.0,
+    "connect_timeout": 10.0,
+
+    "reassign_failed_proxy": true,
+    "fallback_direct_on_proxy_failure": false,
+    "direct_when_no_proxy": false,
+
+    "rate_limit": {
+        "messages_per_second": 2,
+        "burst": 3
+    },
+
+    "reconnect": {
+        "initial_delay": 2,
+        "max_delay": 60,
+        "factor": 2
+    },
+
+    "groups": {
+        "alpha": ["bot001", "bot002"],
+        "beta":  ["bot003", "bot004", "bot005"]
+    },
+
+    "auto_connect": true,
+    "log_level": "INFO",
+    "log_dir": "logs"
+}

@@ -1,0 +1,19 @@
+# irc-bot-manager proxy pool
+# ---------------------------
+# One proxy per line.  Only run this tool against proxy servers you are
+# AUTHORISED to use.  All addresses below are documentation/test examples
+# (RFC 5737 TEST-NET ranges) — they do not resolve.  Replace them with your
+# own infrastructure before enabling proxy_health_check or starting bots.
+#
+# Supported formats:
+#   socks5://HOST:PORT
+#   socks5://USER:PASSWORD@HOST:PORT
+#   http://HOST:PORT
+#   http://USER:PASSWORD@HOST:PORT
+#
+# Blank lines and lines beginning with '#' are ignored.
+
+# socks5://203.0.113.10:1080
+# socks5://203.0.113.11:9050
+# http://198.51.100.20:8080
+# socks5://operator:CHANGE-ME@203.0.113.12:1080
