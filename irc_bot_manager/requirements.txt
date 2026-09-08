@@ -1,0 +1,7 @@
+# Runtime
+# PySocks is optional: the built-in proxy tunnelling is implemented in pure
+# asyncio and does not require it.  It is retained for parity / tooling.
+PySocks==1.7.1
+
+# Testing (dev only)
+pytest>=7.4
